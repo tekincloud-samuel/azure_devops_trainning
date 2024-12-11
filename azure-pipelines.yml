@@ -7,9 +7,9 @@ pool:
 stages:
 - stage: Build
   jobs:
-  - job: FirstJob
+  - job: FirstJob01
     steps:
-    - bash: echo build FirstJob
+    - bash: echo build FirstJob01
     - bash: echo $(PipelineLevelVariable)
     - bash: echo $(Build.BuildNumber)
     - bash: echo $(Build.BuildId)
