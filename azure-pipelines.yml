@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  name: AzureDevops02
+  name: Azure_Devops
 
 stages:
 - stage: Build
@@ -18,7 +18,7 @@ stages:
     # - bash: echo $(System.DefaultWorkingDirectory)
     # - bash: ls -R $(System.DefaultWorkingDirectory)
     # - bash: echo $(Build.ArtifactStagingDirectory)
-    - bash: java --version
+    # - bash: java --version
     # - bash: Python --version
     # - bash: nvm --version
     - bash: ls -R $(Build.ArtifactStagingDirectory)
