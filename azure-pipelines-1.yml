@@ -15,8 +15,9 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: ubuntu-latest
+      name: Azure_Devops
     steps:
+
     - task: Docker@2
       inputs:
         containerRegistry: 'oliel-docker-hub'
