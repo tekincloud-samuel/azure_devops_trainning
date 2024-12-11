@@ -9,16 +9,16 @@ stages:
   jobs:
   - job: FirstJob01
     steps:
-    # - bash: echo build FirstJob01
-    # - bash: echo $(PipelineLevelVariable)
-    # - bash: echo $(Build.BuildNumber)
-    # - bash: echo $(Build.BuildId)
-    # - bash: echo $(Build.SourceBranchName)
-    # - bash: echo $(Build.SourcesDirectory)
-    # - bash: echo $(System.DefaultWorkingDirectory)
-    # - bash: ls -R $(System.DefaultWorkingDirectory)
-    # - bash: echo $(Build.ArtifactStagingDirectory)
-    # - bash: java -version
+    - bash: echo build FirstJob01
+    - bash: echo $(PipelineLevelVariable)
+    - bash: echo $(Build.BuildNumber)
+    - bash: echo $(Build.BuildId)
+    - bash: echo $(Build.SourceBranchName)
+    - bash: echo $(Build.SourcesDirectory)
+    - bash: echo $(System.DefaultWorkingDirectory)
+    - bash: ls -R $(System.DefaultWorkingDirectory)
+    - bash: echo $(Build.ArtifactStagingDirectory)
+    - bash: java -version
     # - bash: Python --version
     # - bash: nvm --version
     - bash: ls -R $(Build.ArtifactStagingDirectory)
