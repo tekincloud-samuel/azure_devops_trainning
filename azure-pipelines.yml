@@ -20,7 +20,7 @@ stages:
     # - bash: echo $(Build.ArtifactStagingDirectory)
     # - bash: java -version
     # - bash: Python --version
-    - bash: nvm --version
+    # - bash: nvm --version
     - bash: ls -R $(Build.ArtifactStagingDirectory)
 
     - task: CopyFiles@2
