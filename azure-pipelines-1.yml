@@ -15,7 +15,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      name: Azure_Devops
+      name: MyAgentPool
     steps:
 
     - task: Docker@2
