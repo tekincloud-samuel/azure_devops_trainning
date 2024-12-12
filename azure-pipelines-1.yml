@@ -21,7 +21,7 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'oliel-docker-hub'
-        repository: 'oliel/currency-exchange-devops'
+        repository: 'doliel/azure_devops_trainning'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
